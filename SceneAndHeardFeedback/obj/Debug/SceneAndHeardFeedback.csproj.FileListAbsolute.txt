@@ -8,7 +8,6 @@ c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFe
 C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\SceneAndHeardFeedback.dll
 C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\SceneAndHeardFeedback.pdb
 C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EntityFramework.dll
-C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EventbriteApi.dll
 C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EntityFramework.xml
 C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.dll
@@ -20,3 +19,4 @@ c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFe
 c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\JsonFx.dll
 c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\Util.ConfigManager.dll
 c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\JsonFx.xml
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\Util.ConfigManager.dll
