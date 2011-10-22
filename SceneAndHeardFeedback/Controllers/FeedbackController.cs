@@ -6,8 +6,6 @@ using System.Web;
 using System.Web.Mvc;
 using EasyHttp.Http;
 using SceneAndHeardFeedback.Models;
-using EventbriteNET.Entities;
-using EventbriteNET;
 using Util.ConfigManager;
 
 namespace SceneAndHeardFeedback.Controllers
@@ -23,14 +21,21 @@ namespace SceneAndHeardFeedback.Controllers
         {
             _eventBriteApi = new EventBriteLayer();
 
-            var events = _eventBriteApi.GetEvents("RVN5O6Q3SAVAQBK4AD", "131922166322212668690", 1593376100);
+            var events = _eventBriteApi.GetEvents(_configManager.GetAppSetting("EventBriteAPIKey"), 
+                                                  _configManager.GetAppSetting("EventBriteUserKey"), 
+                                                  _configManager.GetAppSettingAs<int>("EventBriteOrganiserId"));
 
             return View(events);
         }
 
-        public ActionResult LeaveFeedback()
+        public ActionResult LeaveFeedback(int? id)
         {
-            return View();
+            var feedback = new Feedback();
+            if (id.HasValue)
+            {
+                feedback.eventBriteId = id.Value.ToString();
+            }
+            return View(feedback);
         }
 
         [HttpPost]
@@ -78,12 +83,12 @@ namespace SceneAndHeardFeedback.Controllers
 
     public class EventsWrapper
     {
-        public List<EventWrapper> Events { get; set; }  
+        public List<EventWrapper> Events { get; set; }
     }
 
     public class EventWrapper
     {
-        public Event Event { get; set; } 
+        public Event Event { get; set; }
     }
 
     public class Event

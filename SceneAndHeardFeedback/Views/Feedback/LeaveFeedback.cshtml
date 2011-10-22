@@ -13,7 +13,7 @@
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>Feedback</legend>
-
+        EventbRITEid = @Model.eventBriteId
         <div class="editor-label">
             Your name:
         </div>
@@ -45,7 +45,7 @@
             @Html.EditorFor(model => model.OrganisationName)
             @Html.ValidationMessageFor(model => model.OrganisationName)
         </div>
-
+        <input type="hidden" value="@ViewBag.Id" />
         <p>
             <input type="submit" value="Create" />
         </p>

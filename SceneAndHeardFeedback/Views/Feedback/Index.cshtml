@@ -1,5 +1,4 @@
-﻿@using EventbriteNET.Entities
-@model List<Event>
+﻿@model List<SceneAndHeardFeedback.Controllers.Event>
 
 @{
     ViewBag.Title = "Feedback";
@@ -8,8 +7,16 @@
 <h2>Feedback</h2>
 
 Thank you for visiting a Scene and Heard production. We welcome your feedback on any aspect of the performance.<br />
-
-
+<ul>
+@foreach (var item in Model)
+{
+    <li>
+    @item.id<br />
+    
+    <a href="@Url.Action("LeaveFeedback", new {id = @item.id})">Leave Feedback</a><br />
+    </li>
+}
+</ul>
 
 <hr/>
 <br />
