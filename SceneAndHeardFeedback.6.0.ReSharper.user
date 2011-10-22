@@ -1,0 +1,109 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="559" fromTop="5" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="770" fromTop="18" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="1662" fromTop="9" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="1869" fromTop="13" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="1999" fromTop="17" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="1286" fromTop="1" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="2378" fromTop="14" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="1332" fromTop="10" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="2226" fromTop="10" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="2316" fromTop="15" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="1451" fromTop="15" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="768" fromTop="9" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="484" fromTop="1" />
+      <File id="A43722B7-41B4-474A-BD21-F77B2347393B/d:Controllers/f:FeedbackController.cs" caret="695" fromTop="9" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="userKey" priority="95" />
+      <Item value="return" priority="63" />
+      <Item value="View`0" priority="31" />
+      <Item value="var" priority="223" />
+      <Item value="new" priority="127" />
+      <Item value="http" priority="31" />
+      <Item value="appKey" priority="62" />
+      <Item value="organiserId" priority="63" />
+      <Item value="x" priority="31" />
+      <Item value="public" priority="251" />
+      <Item value="class" priority="123" />
+      <Item value="List" priority="190" />
+      <Item value="string" priority="94" />
+      <Item value="EventWrapper`0" priority="62" />
+      <Item value="url" priority="31" />
+      <Item value="Get`1" priority="31" />
+      <Item value="events" priority="63" />
+      <Item value="Event`0" priority="127" />
+      <Item value="GetHashCode`0" priority="31" />
+      <Item value="AppDomainSetup`0" priority="31" />
+      <Item value="response" priority="63" />
+      <Item value="Int32`0" priority="31" />
+      <Item value="prop" priority="31" />
+      <Item value="IConvertible`0" priority="31" />
+      <Item value="foreach" priority="31" />
+      <Item value="eventWrappers" priority="26" />
+      <Item value="listEvents" priority="63" />
+      <Item value="eventWrapper" priority="31" />
+      <Item value="EventBriteLayer`0" priority="31" />
+      <Item value="_eventBriteApi" priority="63" />
+      <Item value="EventBriteLayer" priority="28" />
+      <Item value="ValidateRequest" priority="31" />
+      <Item value="private" priority="31" />
+      <Item value="ConfigManager" priority="28" />
+      <Item value="_configManager" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EasyHttp.Http.HttpContentTypes">
+      <Item value="ApplicationJson" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EasyHttp.Http.HttpClient">
+      <Item value="Request" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SceneAndHeardFeedback.Controllers.ApiLayer">
+      <Item value="GetEvents`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EasyHttp.Http.HttpResponse">
+      <Item value="DynamicBody" priority="53" />
+      <Item value="StaticBody`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SceneAndHeardFeedback.Controllers.EventsWrapper">
+      <Item value="Events" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SceneAndHeardFeedback.Controllers.EventWrapper">
+      <Item value="Event" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SceneAndHeardFeedback.Controllers.EventBriteLayer">
+      <Item value="Get`1" priority="26" />
+      <Item value="GetEvents`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Util.ConfigManager.IConfigManager">
+      <Item value="GetAppSetting`0" priority="26" />
+      <Item value="GetAppSettingAs`1" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.6\bin\net-2.0\lib</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

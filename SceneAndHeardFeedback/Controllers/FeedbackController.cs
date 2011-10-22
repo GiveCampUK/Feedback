@@ -8,18 +8,21 @@ using EasyHttp.Http;
 using SceneAndHeardFeedback.Models;
 using EventbriteNET.Entities;
 using EventbriteNET;
+using Util.ConfigManager;
 
 namespace SceneAndHeardFeedback.Controllers
 {
     public class FeedbackController : Controller
     {
         private EventBriteLayer _eventBriteApi;
+        private IConfigManager _configManager = new ConfigManager();
         //
         // GET: /Feedback/
 
         public ActionResult Index()
         {
             _eventBriteApi = new EventBriteLayer();
+
             var events = _eventBriteApi.GetEvents("RVN5O6Q3SAVAQBK4AD", "131922166322212668690", 1593376100);
 
             return View(events);
