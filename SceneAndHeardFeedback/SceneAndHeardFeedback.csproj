@@ -71,7 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\FeedbackAdmin\Controllers\FeedbackController.cs" />
+    <Compile Include="Areas\FeedbackAdmin\Controllers\AdminFeedbackController.cs" />
     <Compile Include="Areas\FeedbackAdmin\FeedbackAdminAreaRegistration.cs" />
     <Compile Include="Models\EventBriteLayer.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
@@ -174,10 +174,10 @@
     <Content Include="Areas\FeedbackAdmin\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\FeedbackAdmin\Views\Feedback\Index.cshtml" />
+    <Content Include="Areas\FeedbackAdmin\Views\AdminFeedback\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\FeedbackAdmin\Views\Feedback\ReviewFeedback.cshtml" />
+    <Content Include="Areas\FeedbackAdmin\Views\AdminFeedback\ReviewFeedback.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using SceneAndHeardFeedback.Models;
@@ -26,7 +27,11 @@ namespace SceneAndHeardFeedback.Controllers
                                                   _configManager.GetAppSetting("EventBriteUserKey"),
                                                   _configManager.GetAppSettingAs<int>("EventBriteOrganiserId"));
 
-            return View(events);
+            var filteredEvents = (from e in events
+                                 orderby e.start_date descending
+                                 select e).ToList().Take(20).ToList<Event>();
+
+            return View(filteredEvents);
         }
 
         public ActionResult LeaveFeedback(Int64? id)

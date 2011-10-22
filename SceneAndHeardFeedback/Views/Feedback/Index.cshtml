@@ -7,11 +7,13 @@
 <h2>Feedback</h2>
 
 Thank you for visiting a Scene and Heard production. We welcome your feedback on any aspect of the performance.<br />
+
+Please select the link for the performance you attended:
 <ul>
 @foreach (var item in Model)
 {
     <li>
-    @item.id<br />
+    @item.Title<br />
     <a href="@Url.Action("LeaveFeedback", new {id = @item.id})">Leave Feedback</a><br />
     </li>
 }

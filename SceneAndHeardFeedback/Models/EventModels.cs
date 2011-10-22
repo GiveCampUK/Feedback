@@ -17,7 +17,13 @@ namespace SceneAndHeardFeedback.Models
 
     public class Event
     {
+        public override string ToString()
+        {
+            return Title;
+        }
         public Int64 id { get; set; }
         public string Description { get; set; }
+        public string Title { get; set; }
+        public string start_date { get; set; }
     }
 }
