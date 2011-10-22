@@ -18,6 +18,6 @@ namespace SceneAndHeardFeedback.Models
         [DataType(DataType.EmailAddress)]
         public string ContactEmailAddress { get; set; }
         public string OrganisationName { get; set; }
-
+        public bool Approved { get; set; }
     }
 }

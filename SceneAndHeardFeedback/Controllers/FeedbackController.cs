@@ -8,20 +8,22 @@ namespace SceneAndHeardFeedback.Controllers
 {
     public class FeedbackController : Controller
     {
-        private FeedbackContext db = new FeedbackContext();
         private readonly EventBriteLayer _eventBriteApi;
         private readonly IConfigManager _configManager;
+        private readonly FeedbackService _service;
 
         public FeedbackController()
         {
             _eventBriteApi = new EventBriteLayer();
             _configManager = new ConfigManager();
+
+            _service = new FeedbackService();
         }
 
         public ActionResult Index()
         {
-            var events = _eventBriteApi.GetEvents(_configManager.GetAppSetting("EventBriteAPIKey"), 
-                                                  _configManager.GetAppSetting("EventBriteUserKey"), 
+            var events = _eventBriteApi.GetEvents(_configManager.GetAppSetting("EventBriteAPIKey"),
+                                                  _configManager.GetAppSetting("EventBriteUserKey"),
                                                   _configManager.GetAppSettingAs<int>("EventBriteOrganiserId"));
 
             return View(events);
@@ -32,10 +34,11 @@ namespace SceneAndHeardFeedback.Controllers
             var feedback = new Feedback();
             if (id.HasValue)
             {
-            	feedback.eventBriteId = id.Value.ToString();
+                feedback.eventBriteId = id.Value.ToString();
                 feedback.FeedbackLeft = DateTime.Today;
+                feedback.Approved = false;
             }
-            
+
             return View(feedback);
         }
 
@@ -44,8 +47,7 @@ namespace SceneAndHeardFeedback.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Feedback.Add(feedback);
-                db.SaveChanges();
+                _service.saveFeedback(feedback);
                 return RedirectToAction("Thanks", "Feedback");
             }
             else
@@ -57,6 +59,12 @@ namespace SceneAndHeardFeedback.Controllers
         public ActionResult Thanks()
         {
             return View();
+        }
+
+        public JsonResult List()
+        {
+            // Get the top 10/20 feedbacks, format them as JSON and return them to the caller
+            return new JsonResult();
         }
     }
 }

@@ -71,15 +71,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\Event.cs" />
-    <Compile Include="Controllers\EventBriteLayer.cs" />
-    <Compile Include="Controllers\EventsWrapper.cs" />
-    <Compile Include="Controllers\EventWrapper.cs" />
->>>>>>> 313120722b7e91cca3491506dab2e5279def3506
+    <Compile Include="Areas\FeedbackAdmin\Controllers\FeedbackController.cs" />
+    <Compile Include="Areas\FeedbackAdmin\FeedbackAdminAreaRegistration.cs" />
+    <Compile Include="Models\EventBriteLayer.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
+    <Compile Include="Models\FeedbackService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -156,6 +152,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\FeedbackAdmin\Models\" />
+    <Folder Include="Areas\FeedbackAdmin\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -170,11 +168,16 @@
     <Content Include="Views\Feedback\LeaveFeedback.cshtml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Views\Feedback\Thanks.cshtml" />
-=======
-    <Content Include="Views\Feedback\ThankYou.cshtml" />
->>>>>>> 313120722b7e91cca3491506dab2e5279def3506
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\FeedbackAdmin\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\FeedbackAdmin\Views\Feedback\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\FeedbackAdmin\Views\Feedback\ReviewFeedback.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
