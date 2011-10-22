@@ -5,6 +5,7 @@ namespace SceneAndHeardFeedback.Models
 {
     public class Feedback
     {
+        [Key]
         public int Id { get; set; }
         [DataType(DataType.MultilineText)]
         [Required]

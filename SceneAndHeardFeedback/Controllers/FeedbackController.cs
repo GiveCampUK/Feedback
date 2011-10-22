@@ -14,6 +14,8 @@ namespace SceneAndHeardFeedback.Controllers
     {
         private EventBriteLayer _eventBriteApi;
         private IConfigManager _configManager = new ConfigManager();
+
+        private FeedbackContext db = new FeedbackContext();
         //
         // GET: /Feedback/
 
@@ -28,12 +30,13 @@ namespace SceneAndHeardFeedback.Controllers
             return View(events);
         }
 
-        public ActionResult LeaveFeedback(int? id)
+        public ActionResult LeaveFeedback(Int64? id)
         {
             var feedback = new Feedback();
             if (id.HasValue)
             {
                 feedback.eventBriteId = id.Value.ToString();
+                feedback.FeedbackLeft = DateTime.Today;
             }
             return View(feedback);
         }
@@ -43,10 +46,20 @@ namespace SceneAndHeardFeedback.Controllers
         {
             if (ModelState.IsValid)
             {
+                db.Feedback.Add(feedback);
+                db.SaveChanges();
+                return RedirectToAction("Thanks", "Feedback");
             }
-            return RedirectToAction("Index", "Feedback");
+            else
+            {
+                return View(feedback);
+            }
         }
 
+        public ActionResult Thanks()
+        {
+            return View();
+        }
     }
 
     public class EventBriteLayer
@@ -81,19 +94,4 @@ namespace SceneAndHeardFeedback.Controllers
         }
     }
 
-    public class EventsWrapper
-    {
-        public List<EventWrapper> Events { get; set; }
-    }
-
-    public class EventWrapper
-    {
-        public Event Event { get; set; }
-    }
-
-    public class Event
-    {
-        public Int64 id { get; set; }
-        public string Description { get; set; }
-    }
 }
