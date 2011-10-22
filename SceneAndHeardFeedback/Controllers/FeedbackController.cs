@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using EasyHttp.Http;
 using SceneAndHeardFeedback.Models;
 using EventbriteNET.Entities;
 using EventbriteNET;
@@ -11,19 +13,16 @@ namespace SceneAndHeardFeedback.Controllers
 {
     public class FeedbackController : Controller
     {
-        private EventbriteNET.EventbriteContext context;
+        private EventBriteLayer _eventBriteApi;
         //
         // GET: /Feedback/
 
         public ActionResult Index()
         {
-            context = new EventbriteContext("27SKVYI2C5KFLVID6W", null);
+            _eventBriteApi = new EventBriteLayer();
+            var events = _eventBriteApi.GetEvents("RVN5O6Q3SAVAQBK4AD", "131922166322212668690", 1593376100);
 
-            Organizer sceneandheard = new Organizer(1593730564, context);
-            var eventList = sceneandheard.Events.Select(@event => @event.Value).ToList();
-
-
-            return View(eventList);
+            return View(events);
         }
 
         public ActionResult LeaveFeedback()
@@ -40,5 +39,53 @@ namespace SceneAndHeardFeedback.Controllers
             return RedirectToAction("Index", "Feedback");
         }
 
+    }
+
+    public class EventBriteLayer
+    {
+        public List<Event> GetEvents(string appKey, string userKey, int organiserId)
+        {
+            var eventWrappers = Get<EventsWrapper>(appKey, userKey, organiserId).Events;
+
+            return eventWrappers.Select(eventWrapper => eventWrapper.Event).ToList();
+        }
+
+        private T Get<T>(string appKey, string userKey, int organiserId)
+        {
+            var http = new HttpClient
+            {
+                Request = { Accept = HttpContentTypes.ApplicationJson }
+            };
+
+            var url =
+                string.Format("https://www.eventbrite.com/json/organizer_list_events?app_key={0}&user_key={1}&id={2}",
+                              appKey, userKey, organiserId);
+
+            try
+            {
+                var response = http.Get(url).StaticBody<T>();
+                return response;
+            }
+            catch (WebException ex)
+            {
+                throw ex;
+            }
+        }
+    }
+
+    public class EventsWrapper
+    {
+        public List<EventWrapper> Events { get; set; }  
+    }
+
+    public class EventWrapper
+    {
+        public Event Event { get; set; } 
+    }
+
+    public class Event
+    {
+        public Int64 id { get; set; }
+        public string Description { get; set; }
     }
 }

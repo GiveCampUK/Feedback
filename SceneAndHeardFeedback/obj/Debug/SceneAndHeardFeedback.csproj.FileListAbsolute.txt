@@ -6,3 +6,14 @@ c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFe
 c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.dll
 c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.pdb
 c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\EventbriteApi.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\SceneAndHeardFeedback.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\SceneAndHeardFeedback.pdb
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EntityFramework.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EventbriteApi.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EntityFramework.xml
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.pdb
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\EasyHttp.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\JsonFx.dll
+C:\Projects\ResearchProjects\Feedback\SceneAndHeardFeedback\bin\JsonFx.xml
