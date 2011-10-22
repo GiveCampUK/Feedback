@@ -1,0 +1,8 @@
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\SceneAndHeardFeedback.dll
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\SceneAndHeardFeedback.pdb
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\EntityFramework.dll
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\EntityFramework.xml
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\obj\Debug\ResolveAssemblyReference.cache
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.dll
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\obj\Debug\SceneAndHeardFeedback.pdb
+c:\users\ukpxp003\documents\visual studio 2010\Projects\GiveCamp\SceneAndHeardFeedback\SceneAndHeardFeedback\bin\EventbriteApi.dll
